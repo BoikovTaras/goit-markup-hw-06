@@ -566,6 +566,71 @@ img {
   background-color: var(--akcent-color);
 }
 
+.footer-form-box {
+  margin-left: 93px;
+}
+.footer-form-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-form {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: var(--background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+.footer-form-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-forn-btn {
+  background-color: var(--akcent-color);
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 28px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-forn-btn:hover,
+.footer-forn-btn:focus {
+  background-color: #188ce8;
+}
+.footer-send-icon {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
+
 /* ===========  End Секция футер =========== */
 
 /* ================== ПОРТФОЛИО =================== */
@@ -823,6 +888,11 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox-icon:hover + .modal-checkbox,
+.modal-checkbox-icon:focus + .modal-checkbox {
+  color: var(--akcent-color);
 }
 
 .modal-checkbox::before {

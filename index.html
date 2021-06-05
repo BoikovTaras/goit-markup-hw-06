@@ -349,6 +349,7 @@
                 </div>
             </section>
         </main>
+        <!-- =================== Ф у т е р =====================-->
         <footer class="footer">
             <div class="footer-container container">
                 <div>
@@ -396,15 +397,24 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-form-box">
                     <p class="footer-form-title">Подпишитесь на рассылку</p>
                     <form class="footer-form" action="#">
+                        <label for="footer-form-area">
+                            <input class="footer-form-input" type="email" placeholder="E-mail" required>
+                        </label>
+                        <button class="footer-forn-btn" type="submit">
+                            Подписаться
+                            <svg class="footer-send-icon">
+                                <use href="./images/svg/sprite.svg#footer-icon-send"></use>
+                            </svg>
+                        </button>
 
                     </form>
                 </div>
             </div>
         </footer>
-
+<!-- =====================Бэкдроп======================== -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="backdrop-button" type="button" data-modal-close>
@@ -460,11 +470,9 @@
                     <span class="modal-checkbox-wrapper">
                         <input class="modal-checkbox-icon visually-hidden" type="checkbox" name="user-policy" id="checkbox-policy" required>
                         <label class="modal-checkbox" for="checkbox-policy">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия договора</a></label>
-
                     </span>
                     
                     <button type="submit" class="modal-button">Отправить</button>
-                    
             
                 </form>
             </div>
